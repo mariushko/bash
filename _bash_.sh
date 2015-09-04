@@ -463,7 +463,7 @@ EOF
 _main_(){
 
   _printSeparator_ '-'
-  _info_ "Exaples"
+  _info_ "Examples"
   _printSeparator_ '-'
   _softwareINeed_ ls dd ll pp gg ff || true
   _info_ "Ellipsized line"
@@ -479,7 +479,7 @@ _main_(){
   _printSeparator_ '+'
   _printSeparator_ '+-'
   _softwareINeed_ ls dd
-  _runJob_ "sleep 5; Press CTRL-C to send INT signal" "sleep 5"
+  _runJob_ "sleep 5; Press CTRL-C to send INT signal"        "sleep 5"
   _runJob_ "sleep 5; false; Press CTRL-C to send INT signal" "sleep 5; false" || true
 }
 
