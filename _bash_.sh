@@ -78,7 +78,7 @@ _die_(){
 
   _cleaning_
   [[ ${SIGNAL} != NONE ]] && MESSAGE+=${SIGNAL}
-  [[ -n ${MESSAGE} ]] && _error_ "[EXIT]: ${MESSAGE}" > /dev/stderr
+  [[ -n ${MESSAGE} ]] && _error_ "[EXIT]: ${MESSAGE}" >&2
   exit 1
 }
 
